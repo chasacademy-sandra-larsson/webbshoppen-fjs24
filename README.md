@@ -78,11 +78,60 @@ Ni har full kreativ frihet att designa webbshoppen. Ta en titt på några befint
 ![](https://github.com/chasacademy-sandra-larsson/boilerroom-webshoppen/blob/main/inspo2.png)
 ![](https://github.com/chasacademy-sandra-larsson/boilerroom-webshoppen/blob/main/inspo3.png)
 
+## **Webbshoppen del 2**
+
+I denna del ska du implementera händelsespårning av taggen gtag.js som monitoreras i Google Analytics.
+
+1. Skapa ett Google Analytics konto
+2. Skapa ny egendom som baserar sig på live-versionen av denna sida.
+3. I slutet av steg 2) får du denna kodsnutt. Lägg in den i index.html
+
+```
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+```
+4. Vänta 2-3 dagar på att gtagg:en synkar mot er sida. Kolla i Google Analytics kontot att du får besökare som registreras.
+
+
+###Workshop  19:e november
+
+Nu ska ni ha en gtag som registrear händelsepårning i Google Analytics.
+
+1. Börja med att diskutera i teamet vad de olika default events:en innebär: 
+
+* 	page-view
+* 	user_engagement
+* 	scroll
+* 	session_start
+* 	first_visit
+
+2. Nu ska ni implementera minst 3 st custom events. För gtag ser det ut så här: 
+
+    ```
+    gtag('event', 'button_click', {
+        'event_category': 'interactions on products',
+        'event_label': 'adding products to cart',
+        'value': 1,
+        'debug_mode': true
+      });
+    ```
+
+    Som ni sedan lägger in under önskad händelse någonstans i er JS.
+   
+  3. Börja att kolla i "Debug view" att händelsen registreras. 
+  4. Se sedan över monitoreringen i "Realtime overview". 
+
+
 ## **Inlämning**
 
-Detta är del 1 av uppgift Webbshoppen och ni har på-plats-dag 5 december och kommande vecka att arbeta på. 
-Del 2 av uppgiften kommer handlar om händelsespårning med Google Analytics och där har ni på-plats-dag 19 december att arbeta med. 
-Lämna in slutgiltigt repo med live-länk samt projektbeskrivning i Canvas senast 20 december.
+Ni lämnar in slutgiltigt repo under u04 i Canvas. För spårningen gör ni screenshots och lägger till i en beskrivande del i er Readme.
  
  💫🚀
-# webbshoppen-fjs24

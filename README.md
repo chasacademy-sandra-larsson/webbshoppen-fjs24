@@ -127,11 +127,12 @@ Nu ska ni ha en gtag som registrear händelsepårning i Google Analytics.
     Som ni sedan lägger in under önskad händelse någonstans i er JS.
    
   3. Börja att kolla i "Debug view" att händelsen registreras. 
-  4. Se sedan över monitoreringen i "Realtime overview". 
-
+  4. Se sedan över monitoreringen i "Realtime overview".
+  5. För dokumentation och inlämning tar ni screenshots över era custom events och en beskrivning vad de spårar.
+  6. Reflektera i teamet och sammanfatta på 300-500 ord i Readme.md. Vilka möjligheter finns det med händelsespårning? Finns det begränsningar?
+     
 
 ## **Inlämning**
 
-Ni lämnar in slutgiltigt repo under u04 i Canvas. För spårningen gör ni screenshots och lägger till i en beskrivande del i er Readme.
- 
+Ni lämnar in slutgiltigt repo under u04 i Canvas. 
  💫🚀
